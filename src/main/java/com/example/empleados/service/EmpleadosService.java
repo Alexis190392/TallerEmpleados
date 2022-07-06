@@ -43,7 +43,6 @@ public class EmpleadosService {
         /*
             validaciones...
         */
-        
         eDao.delete(findById(id).get());
         return "Empleado" + id + "eliminado";
     }
