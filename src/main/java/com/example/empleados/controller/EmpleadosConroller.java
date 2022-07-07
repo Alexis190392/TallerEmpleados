@@ -33,7 +33,7 @@ public class EmpleadosConroller {
         return eService.create(emp);
     }
     
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable long id){
         return eService.delete(id);
     }    
