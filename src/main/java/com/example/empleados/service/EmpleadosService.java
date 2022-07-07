@@ -43,7 +43,8 @@ public class EmpleadosService {
         /*
             validaciones...
         */
-        eDao.delete(findById(id).get());
+        //eDao.delete(findById(id).get());
+        eDao.deleteById(id);
         return "Empleado" + id + "eliminado";
     }
 }
